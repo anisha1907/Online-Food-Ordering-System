@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyRestaurant.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+   <nav class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li ><a href="main.html" >HOME</a></li>
+      <li ><a href="about.html">ABOUT US</a></li>
+      <li ><a href="gallery.html">GALLERY</a></li>
+      <li ><a href="menu.html">MENU</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+    </ul>
+    </div>
+   </nav>
+ </header>
+ <div class="container-fluid row" id="login">
+  <div class="col-sm-6 col-sm-offset-3 panel panel-default" >
+          <div class="panel-body">
+              <h1><center><b>LOGIN</b></center></h1>
+              <br/>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+               </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="pswd">Password:</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pswd" placeholder="Enter password">
+                  </div>
+               </div>
+                <div class="form-group">
+                  <div class="col-sm-3 col-xs-7 col-xs-offset-3 col-sm-offset-2">
+                    <button class="btn btn-primary" id="loginb">LOGIN</button>
+                  </div>
+                    <label class="control-label col-sm-3 col-xs-6" for="loginb" id="label"><p>New user?</p></label>
+                 <div class="col-sm-3 col-xs-4">
+                     <a href="signup.html"  class="btn btn-primary">SIGN UP</a>
+                  </div>
+               </div>
+              <div class="form-group">
+              <a href="#">Forgot Password?</a>
+             </div>
+              </form>
+          </div>
+        </div>
+</div>
+
+<footer id="f">
+       <div class="row">
+        <nav class="navbar col-sm-6 col-sm-offset-5">
+         <ul class="nav navbar-nav ">
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </nav>
+    </div>
+    <center><p> My Restaurant© 2019 All Rights Reserved.</p></center>
+
+</footer>
+</body>
+</html>

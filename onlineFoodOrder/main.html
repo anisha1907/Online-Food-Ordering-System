@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MyRestaurant.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+ <script type="text/javascript">
+    var images = ["4.jpg", "5.jpg", "3.jpg"];
+    $(function () {
+        var i = 0;
+        $("#dvImage").css("background-image", "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/" + images[i] + ")");
+        setInterval(function () {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#dvImage").fadeOut(100, function () {
+                $(this).css("background-image", "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/" + images[i] + ")");
+                $(this).fadeIn(100);
+            });
+        }, 3000);
+    });
+</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+   <nav class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#" >HOME</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+    </ul>
+    </div>
+   </nav>
+ </header>
+ <div class="container-fluid" id="dvImage">
+     <center><h1>My Restaurant</h1></center>
+    <center><h2>Experience The Great Food</h2></center>
+ </div>
+<div class="container-fluid" id="gallery">
+    <center><h1>Our Special Items</h1></center>
+    <div class="container-fluid" >
+   <div class="row">
+ <div class="col-sm-3"  id="cir">
+ <img src="images/food10.jpg" class="img-responsive"/>
+ </div> 
+<div class="col-sm-3" id="cir">
+ <img src="images/food1.jpg" class="img-responsive"/>
+ </div>
+<div class="col-sm-3" id="cir">
+ <img src="images/food2.jpg" class="img-responsive"/>
+ </div>
+<div class="col-sm-3" id="cir">
+ <img src="images/food3.jpg" class="img-responsive"/>
+ </div>
+
+</div>
+  <div class="row">
+ <div class="col-sm-3" id="cir">
+ <img src="images/food4.jpg" class="img-responsive "/>
+ </div> 
+<div class="col-sm-3" id="cir">
+ <img src="images/food5.jpg" class="img-responsive"/>
+ </div>
+<div class="col-sm-3" id="cir">
+ <img src="images/food6.jpg" class="img-responsive"/>
+ </div>
+<div class="col-sm-3" id="cir">
+ <img src="images/food7.jpg" class="img-responsive"/>
+ </div>
+</div>
+ </div>
+</div>
+<div class="container-fluid" id="tag">
+ <center><h1>WE CREATE DELICIOUS MEMORIES</h1></center>
+ <center><h4>MY RESTAURANT OFFERS GUESTS A HIGH QUALITY EXPERIENCE IN "SMART-CASUAL" SETTINGS AND ATMOSPHERE.</h4></center>
+    <center><a href="about.html"><button class="btn btn-lg btn-success">Discover More</button></a></center> 
+<br/>
+</div>
+<footer id="f">
+       <div class="row">
+        <nav class="navbar col-sm-6 col-sm-offset-5">
+         <ul class="nav navbar-nav ">
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank" data-toggle="tooltip" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </nav>
+    </div>
+    <center><p> My Restaurant© 2019 All Rights Reserved.</p></center>
+
+</footer>
+
+</body>
